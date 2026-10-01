@@ -4,40 +4,53 @@
     #FEA82F
     #FFFECB
     #5448C8
+    white
 */
 
 body{
+    /*Cor do fundo do site*/
     background-color: #FEA82F;
     align-items: center;
     justify-content: center;
+    /*Limitando até onde vão as informações*/
     max-width: 900px;
+    /*Uma fonte melhor*/
+    font-family: 'Arial', 'Helvetica', sans-serif;
 }
 
+/*Cabeçalho com o nome da empresa*/
 header{
     color: white;
     background-color: #FF2E00;
+    /*Deixando o texto no centro do header*/
     text-align: center;
+    /*Bordas*/
     border: solid #000  2px;
-    padding: 20px;
+    /*Mudando o tamanho do header*/
+    padding: 10px;
 }
 
 main{
     align-items: center;
     justify-content: center;
     padding: 20px;
+    /*Cor de fundo onde vão ficar as informações do notebook*/
     background-color: white;
+    border: solid #000 2px;
 }
 
 header h1{
     font-size: 50px;
 }
 
+/*Tamanho do imagem e deixando com bordas arredondadas*/
 img{
     height: auto;
     width: 200px;
     border-radius: 7px;
 }
 
+/*Botão para interações futuras*/
 button{
     background-color: #5448C8;
     color: #FFFECB;
@@ -45,19 +58,36 @@ button{
     border-radius: 5px;
     margin-left: 337px;
     margin-bottom: 10px;
+    /*Colocando uma sombra no botão*/
     box-shadow: #423E3B 5px 3px 5px;
 }
 
-p.simulação{
+/*Tentando deixar um pouco parecido com o excel*/
+.simulação{
     margin: 0;
-    border: solid #000 2px;
+    border: solid #a5a4a4 1px;
     max-width: 500px;
+}
+
+article{
+    text-align: justify;
+    max-width: 500px;
+}
+
+/*Tentando deixar um pouco parecido com o excel*/
+/*Obs: tentei muito tirar os pontos da lista mas não consegui então deixei de lado*/
+ul li{
+    padding-left: 20px;
+    border: solid #a5a4a4 1.8px;
+    max-width: 442px;
 }
 
 footer{
     color: #FFFECB;
+    /*Cor de fundo do footer*/
     background-color: #000;
-    align-items: center;
+    /*Alinhando o texto*/
     text-align: center;
+    /*Tamanho do footer*/
     padding: 30px;
 }
