@@ -6,6 +6,12 @@
     #5448C8
     white
 */
+:root{
+    --bordaCinza: #423E3B;
+    --header: #FF2E00
+    --background: #FEA82F;
+
+}
 
 body{
     /*Cor do fundo do site*/
@@ -62,13 +68,6 @@ button{
     box-shadow: #423E3B 5px 3px 5px;
 }
 
-/*Tentando deixar um pouco parecido com o excel*/
-.simulação{
-    margin: 0;
-    border: solid #a5a4a4 1px;
-    max-width: 500px;
-}
-
 article{
     text-align: justify;
     max-width: 500px;
@@ -78,6 +77,8 @@ article{
 /*Obs: tentei muito tirar os pontos da lista mas não consegui então deixei de lado*/
 ul li{
     padding-left: 20px;
+    margin-top: 10px;
+    border-radius: 2px;
     border: solid #a5a4a4 1.8px;
     max-width: 442px;
 }
