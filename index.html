@@ -3,42 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberHardware</title>
+    <title>CyberAcre Hardware</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!--Cabeçalho com o nome da empresa-->
     <header>
-        <h1>CyberHardware</h1>
+        <h1>CyberAcre Hardware</h1>
     </header>
     <main>
         <!--Nome do produto-->
-        <h1><strong>Notebook Gamer Predator X</strong></h1>
-        <div>
+        <h2 class="nome"><strong>Notebook Gamer Predator X</strong></h2>
+        <div id="show">
             <!--Imagem do Produto-->
-            <img src="https://images.pexels.com/photos/6372819/pexels-photo-6372819.jpeg?
-            _gl=1*vgjyk9*_ga*MTc5ODc0MzgwNy4xNzkwODYzMzQz*_ga_8JE65Q40S6*czE3OTA4NjY1MjgkbzIkZzEkdDE3OTA4NjY4MjckajU4JGwwJGgw"
-            alt="Notebook Gamer Predator X: imagem">
+            <img src="https://images.pexels.com/photos/6372819/pexels-photo-6372819.jpeg?_gl=1*vgjyk9*_ga*MTc5ODc0MzgwNy4xNzkwODYzMzQz*_ga_8JE65Q40S6*czE3OTA4NjY1MjgkbzIkZzEkdDE3OTA4NjY4MjckajU4JGwwJGgw" alt="Notebook Gamer Predator X: imagem">
             <!--Valor do produto-->
-            <h2><strong>R$ 12.500,00</strong></h2>
+            <h2 class="vermelho"><strong>R$ 12.500,00</strong></h2>
             <h3>
                 <strong>Descrição Comercial</strong>
             </h3>
+            <!--Descrição do produto-->
+            <article>
+                <p>Desempenho extremo para os jogos mais exigentes. A refrigeração avançada garanteque a máquinapermaneça fria
+                    mesmo sob a pressão contínua. Mergulhe em gráficos realistas e frames ultrarrápidos.
+                </p>
+            </article>
+            <aside>
+                <button id="pagamento" onclick="simularPagamento()">Simulação de pagamento</button>
+            </aside>
         </div>
-        <!--Descrição do produto-->
-        <article>
-            <p>Desempenho extremo para os jogos mais exigentes. A refrigeração avançada garanteque a máquinapermaneça fria
-                mesmo sob a pressão contínua. Mergulhe em gráficos realistas e frames ultrarrápidos.
-            </p>
-        </article>
-        <aside>
-            <button id="pagamento" onclick="simularPagamento()">Simulação de pagamento</button>
-        </aside>
         <!--Preparando para a inserção do JavaScript-->
-        
+        <section id="resultado">
+            <p>Resultado da simulação:</p>
+        </section>
         <!--Seção para as informações técnicas-->
         <section>
-            <h3>Ficha Técnica</h3>
+            <h3>Ficha Técnica:</h3>
             <ul>
                 <li><strong>Processador:</strong> Intel Core i9-13900HX</li>
                 <li><strong>Memória RAM:</strong> 32GB DDR5 5600MHz</li>

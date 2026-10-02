@@ -1,23 +1,17 @@
-/*paleta de cores
-    #423E3B
-    #FF2E00
-    #FEA82F
-    #FFFECB
-    #5448C8
-    white
-*/
 :root{
     --bordaCinza: #423E3B;
-    --header: #FF2E00
+    --header: #FF2E00;
     --background: #FEA82F;
-
+    --corFooter: #FFFECB;
+    --corBtn: #5448C8;
+    --main: white;
+    --preto: #000;
 }
 
 body{
     /*Cor do fundo do site*/
-    background-color: #FEA82F;
-    align-items: center;
-    justify-content: center;
+    background-color: var(--background);
+    margin: 0 auto;
     /*Limitando até onde vão as informações*/
     max-width: 900px;
     /*Uma fonte melhor*/
@@ -26,14 +20,14 @@ body{
 
 /*Cabeçalho com o nome da empresa*/
 header{
-    color: white;
-    background-color: #FF2E00;
+    color: var(--main);
+    background-color: var(--header);
     /*Deixando o texto no centro do header*/
     text-align: center;
     /*Bordas*/
-    border: solid #000  2px;
+    border: solid var(--preto)  2px;
     /*Mudando o tamanho do header*/
-    padding: 10px;
+    padding: 7px;
 }
 
 main{
@@ -41,8 +35,17 @@ main{
     justify-content: center;
     padding: 20px;
     /*Cor de fundo onde vão ficar as informações do notebook*/
-    background-color: white;
-    border: solid #000 2px;
+    background-color: var(--main);
+    border-left: solid var(--preto) 2px;
+    border-right: solid var(--preto) 2px;
+}
+
+.nome{
+    font-size: 30px;
+}
+
+.vermelho{
+    color: var(--header);
 }
 
 header h1{
@@ -58,9 +61,8 @@ img{
 
 /*Botão para interações futuras*/
 button{
-    background-color: #5448C8;
-    color: #FFFECB;
-    /*border: solid #000 2.5px;*/
+    background-color: var(--corBtn);
+    color: var(--corFooter);
     border-radius: 5px;
     margin-left: 337px;
     margin-bottom: 10px;
@@ -73,20 +75,23 @@ article{
     max-width: 500px;
 }
 
+ul{
+    list-style: none;
+}
+
 /*Tentando deixar um pouco parecido com o excel*/
-/*Obs: tentei muito tirar os pontos da lista mas não consegui então deixei de lado*/
 ul li{
     padding-left: 20px;
     margin-top: 10px;
     border-radius: 2px;
-    border: solid #a5a4a4 1.8px;
+    border: solid var(--bordaCinza) 1.8px;
     max-width: 442px;
 }
 
 footer{
-    color: #FFFECB;
+    color: var(--corFooter);
     /*Cor de fundo do footer*/
-    background-color: #000;
+    background-color: var(--preto);
     /*Alinhando o texto*/
     text-align: center;
     /*Tamanho do footer*/
